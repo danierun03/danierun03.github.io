@@ -67,6 +67,7 @@ nav a:hover, #menuSelected{
 main{
     margin: 50px max(50px, 15%);
     flex-grow: 1;
+    word-wrap: break-word;
 }
 main h1{
     font-size: x-large;
