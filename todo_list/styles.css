@@ -1,0 +1,96 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+ul {
+    list-style-type: none;
+    border: gray 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0%;
+}
+li {
+    text-align: left;
+    overflow-wrap: break-word;
+    cursor: pointer;
+    position: relative;
+    padding: 8px 100px 8px 50px;
+    background: #ffffff;
+    font-size: 18px;
+}
+li:nth-child(even) {
+    background: #f0f0f0;
+}
+li:hover{
+    background: #ccc;
+}
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+.close{
+    color: white;
+    background-color: red;
+    padding: 3px 12px 5px 12px;
+    border-radius: 20px;
+    position: absolute;
+    left: 85%;
+    top: 10%
+}
+input[type="text"] {
+    display: inline;
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+}
+#addtask {
+    display: inline;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+#addtask:hover {
+    background-color: #45a049;
+}
+#addtask:active{
+    background-color: #306e34;
+}
+#reset{
+    display: inline;
+    width: 80%;
+    background-color: white;
+    padding: 8px;
+    border: gray 1px solid;
+    border-radius: 10px;
+}
+#reset:hover{
+    background-color: lightgray;
+}
+#reset:active{
+    background-color: gray;
+    color: white;
+}
+

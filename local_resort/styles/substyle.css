@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body{
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: skyblue;
+}
+nav{
+    background-color: white;
+    padding: 0px 0px 20px 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+nav #logohome{
+    position: relative;
+    top: 26px;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px 10px 15px 10px;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 1s;
+    font-weight: 600;
+}
+nav a:link, nav a:visited{
+    color: black;
+}
+nav li:hover{
+    background-color: lightgrey;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    color: cornflowerblue
+}
+p{
+    text-indent: 3em;
+}
+main{
+    background-color: #eeeeff;
+    padding: 30px 30px 30px 30px;
+    margin: 20px auto 0px auto;
+    font-size: larger;
+    color: rgb(80, 80, 80);
+    max-width: 800px;   
+}
+.center{
+    text-align: center;
+}
+#cardcenter{
+    display: inline;
+    border: black 5px solid;
+}
+.card{
+    display: inline-block;
+    height:380px;
+    width:250px;
+    position: relative;
+    top:10px;
+    background-color: white;
+    border: lightgray 2px solid;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: width 1s;
+}
+.cardimgbox{
+    width: auto;
+    height: 180px;
+    border-radius: 20px 20px 0px 0px;
+}
+.cardimg{
+    height: 180px;
+    width: auto;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%, 0);
+}
+.cardtitle{
+    font-size: medium;
+    color: black;
+}
+.carddesc{
+    padding: 10px;
+    font-size: small;
+    animation: fadeIn 1.5s;
+}
+.cardext{
+    padding: 10px;
+    font-size: small;
+    display: none;
+    
+}
+.card:hover{
+    display: inline-block;
+    height:380px;
+    width:380px;
+    background-color: white;
+    border: lightgray 2px solid;
+    border-radius: 20px;
+}
+.card:hover .carddesc{
+    display: none;
+}
+.card:hover .cardext{
+    display: block;
+    animation: fadeIn 2s;
+}
+footer{
+    text-align: center;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

@@ -1,0 +1,22 @@
+#wrapper{background-color: white; box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.7);
+    width:80%; min-width: 960px; max-width: 2048; margin-left: auto; margin-right: auto;}
+header{background-image: linear-gradient(90deg, rgba(0,0,75,1) 0%, rgba(0,0,75,1) 70%, rgba(255,255,255,0) 100%), url(images/sunset.jpg);
+    background-repeat: no-repeat; background-position: right; background-size:cover; height:72px;}
+body{background: linear-gradient(150deg, rgba(0,0,75,1) 0%, rgba(70,70,228,1) 18%, rgba(165,165,255,1) 48%, rgba(70,70,228,1) 83%, rgba(0,0,75,1) 100%);
+    color:#555555; background-attachment: fixed; font-family:'Verdana', sans-serif;}
+h1{padding-top:0.5em; text-align: center;
+    color:white; font-family:'Georgia', serif;}
+nav{padding: 5px; text-align: center; font-weight:bold;}
+nav a{text-decoration: none;}
+h2{color:blue; font-family:'Georgia', serif;}
+h3{color:#000033;}
+dt{font-weight: bold; color:midnightblue;}
+#homehero{background-image: url(images/hero.jpg); height: 300px;
+    background-size: 100% 100%; background-repeat:no-repeat; background-size:cover; background-position: bottom;}
+#trailhero{background-image: url(images/trails.jpg); height: 300px;
+    background-size: 100% 100%; background-repeat:no-repeat; background-size:cover; background-position: bottom;}
+#cottagehero{background-image: url(images/cottages.jpg); height: 300px;
+       background-size: 100% 100%; background-repeat:no-repeat; background-size:cover; background-position: bottom;}
+    .pacific{font-size: large; color: blue;}
+main{padding-left: 2em; padding-right: 2em;}
+footer{text-align: center; padding-bottom: 1em;}

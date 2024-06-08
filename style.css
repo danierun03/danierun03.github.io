@@ -1,0 +1,238 @@
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #e1efff;
+    min-height: 97.75vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    line-height: 25px;
+}
+#top{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100px;
+    background-color:#bbdbff;
+    margin: -8px;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    padding: 0 5%;
+}
+header{
+    font-family: "Noto Sans Japanese", sans-serif;
+    height: min-content;
+    color: white;
+    padding: 0px 30px;
+    border-right: #4880c1 2px solid;
+    align-self: center;
+    
+}
+#logo{
+    height: 50px;
+    opacity: 80%;
+}
+#hamburger{
+    display: none;
+}
+nav{
+    padding: 0px 30px;
+}
+nav ul{
+    padding: 20px;
+}
+nav li{
+    display: inline;
+}
+nav a{
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #2d68ac;
+    transition: background-color 100ms ease-in, color 100ms ease-in;
+}
+nav a:hover, #menuSelected{
+    background-color: #6a9fdb;
+    color:#bbdbff;
+}
+#about{
+    position: relative;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-50%, 0);
+    object-fit: cover;
+    width: min(700px, 100%);
+    aspect-ratio: 16/9;
+}
+main{
+    margin: 50px max(50px, 15%);
+    flex-grow: 1;
+}
+main h1{
+    font-size: x-large;
+    margin: 15px 0;
+}
+.bold{
+    font-weight: 600;
+}
+main h2{
+    font-size: large;
+}
+main h1, main h2, main dt{
+    color: #335e8f;
+}
+main p{
+    text-indent: 3em;
+}
+main dt{
+    font-weight: 600;
+    font-size: larger;
+    margin: 10px;
+}
+main a{
+    text-decoration: none;
+    color: #3474bc;
+}
+main a:hover{
+    text-decoration: underline;
+}
+main img{
+    width: 80%;
+    border: #335e8f 1px solid;
+    border-radius: 20px;
+}
+#lighttext{
+    color:#2d68ac;
+}
+footer{
+    background-color:#2d68ac;
+    margin: -8px;
+    padding: 0 max(5%, 20px);
+    display: flex;
+    flex-flow: row nowrap;
+}
+#copyright{
+    margin: auto;
+    padding: 0 20px;
+    width: 35%;
+    line-height: 25px;
+    color: #bbdbff;
+}
+#socials{
+    width: 65%;
+    margin: 30px 0px;
+    border-left: #bbdbff 2px solid;
+}
+#socials ul{
+    display: flex;
+    flex-flow:  wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin: 0 0 0 30px;
+    padding: 0;
+}
+#socials li{
+    list-style: none;
+    padding: 10px 10px;
+    width: 150px;
+}
+#socials a{
+    text-decoration: none;
+    color: #bbdbff;
+    transition: color 100ms ease-in;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+#socials a:hover{
+    color: #6a9fdb
+}
+#socials a img{
+    height: 30px;
+    padding: 0 15px
+}
+@media screen and (max-width: 700px) {
+    #top{
+        padding: 0;
+    }
+    header{
+        background-color: #bbdbff;
+        padding: 25px 30px;
+        width:100%;
+        border-right: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        z-index: 2;
+    }
+    #logo{
+        margin: auto
+    }
+    #hamburger{
+        display: inline;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    nav{
+        width: 100%;
+        padding: 0;
+        background-color: #a6d0ff;
+        z-index: 1;
+        position: absolute;
+        top: -170px;
+        left: 0px;
+        transition: top 500ms ease-out;
+    }
+    nav ul{
+        text-align: center;
+    }
+    nav li{
+        display: block;
+        padding: 20px;
+    }
+    nav a{
+        color: #3474bc;
+    }
+    nav a:hover, #menuSelected{
+        background-color: #3474bc;
+        color: #a6d0ff
+    }
+    .navMenu{
+        top: 100px;
+    }
+    main img{
+        width: 100%;
+    }
+    footer{
+        flex-flow: column-reverse nowrap;
+        align-items: center;
+    }
+    #socials{
+        width: 100%;
+        border-left: none;
+        padding: 20px 0;
+        margin: 0;
+    }
+    #socials ul, #socials li, #socials a{
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    #socials .socialtext{
+        display: none;
+    }
+    #socials a img{
+        padding: 5px
+    }
+    #copyright{
+        border-top: #6a9fdb 2px solid;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+}

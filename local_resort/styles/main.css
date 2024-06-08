@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+body{
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: skyblue;
+}
+nav{
+    background-color: white;
+    padding: 0px 0px 20px 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+nav #logohome{
+    position: relative;
+    top: 26px;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px 10px 15px 10px;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 1s;
+    font-weight: 600;
+}
+nav a:link, nav a:visited{
+    color: black;
+}
+nav li:hover{
+    background-color: lightgrey;
+}
+a{
+    text-decoration: none;
+}
+#homehero{
+    background-image: url(../images/homehero.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    max-width: 1000px;
+    margin:auto;
+}
+#abouthero{
+    background-image: url(../images/abouthero.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    max-width: 1000px;
+    margin:auto;
+}
+#logo{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:300px;
+    margin: auto;
+    position: relative;
+    position: sticky;
+    bottom: -20px;
+    z-index: 1;
+}
+#logoimg{
+    background-color: rgba(235, 206, 235, 0.8);
+    border: white 2px solid;
+    border-radius: 50px;
+    position: relative;
+    top:-100px;
+}
+#belowlogo{
+    position: relative;
+    top: -200px;
+}
+#blbg{
+    background-color: skyblue;
+}
+h1{
+    color: cornflowerblue
+}
+p{
+    text-indent: 3em;
+}
+main{
+    background-color: #eeeeff;
+    padding: 30px 30px 30px 30px;
+    margin: 50px auto 0px auto;
+    font-size: larger;
+    color: rgb(80, 80, 80);
+    max-width: 800px;   
+}
+.block{
+    display: inline-block;
+    height: 220px;
+}
+#shop{
+    float: right;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 20px;
+}
+#pool, #boat{
+    float: left;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 20px;
+}
+a:link, a:visited, .highlight{
+    color: cornflowerblue;
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+}
