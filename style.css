@@ -7,6 +7,10 @@ body{
     justify-content: stretch;
     line-height: 25px;
 }
+.highlight{
+    color: #2d68ac;
+    font-weight: 600;
+}
 #top{
     display: flex;
     flex-wrap: wrap;
