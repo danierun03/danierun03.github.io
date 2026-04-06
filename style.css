@@ -219,7 +219,7 @@ footer{
 #socials-list #jtan-socials, #socials-list #other-socials{
     display: none;
 }
-#other-socials #nationstates{
+.social-initials{
     display: inline;
     color: #bbdbff;
     font-weight: bold;
