@@ -13,9 +13,11 @@ function mainMenu() {
     }
 }
 
-const socialAliasList = document.getElementById("social-alias-list")
+const socialAliasList = document.getElementById("social-alias-list");
+const socialAliasTriangle = document.getElementById("social-alias-triangle");
 function showSocialsMenu() {
     socialAliasList.classList.toggle("display");
+    socialAliasTriangle.classList.toggle("display");
 }
 
 const socialAliasMenuListItems = document.getElementById('social-alias-list').querySelectorAll('li');
@@ -25,11 +27,11 @@ const socialLinksListItems = socialLinksList.querySelectorAll('ul');
 
 socialAliasMenuListItems.forEach((item, index) => {
     item.addEventListener('click', (event) => {
-        document.getElementById("social-alias").textContent = event.target.textContent
+        document.getElementById("social-alias").querySelector("span").innerHTML = event.target.textContent
         for(var i = 0; i < socialLinksListItems.length; i++){
             socialLinksListItems[i].style.display = "none";
         }
         socialLinksListItems[index].style.display = "flex"
-        socialAliasList.classList.toggle("display");
+        showSocialsMenu();
     })
 })

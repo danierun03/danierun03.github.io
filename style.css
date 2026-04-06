@@ -124,6 +124,8 @@ footer{
     color: #bbdbff;
 }
 #social-alias{
+    display: flex;
+    align-items: center;
     color: #bbdbff;
     font-weight: bold;
     margin: 0 0 0 10px;
@@ -133,6 +135,17 @@ footer{
 }
 #social-alias:hover{
     background-color:#225793;
+}
+#social-alias span{
+    padding-right: 10px;
+}
+#social-alias-triangle{
+    height: 15px;
+    transform: rotate(0deg);
+    transition: transform 500ms ease-out;
+}
+#social-alias-triangle.display{
+    transform: rotate(-90deg);
 }
 #social-alias-list{
     display: block;
