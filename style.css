@@ -141,11 +141,11 @@ footer{
 }
 #social-alias-triangle{
     height: 15px;
-    transform: rotate(0deg);
+    transform: rotate(-90deg);
     transition: transform 500ms ease-out;
 }
 #social-alias-triangle.display{
-    transform: rotate(-90deg);
+    transform: rotate(0deg);
 }
 #social-alias-list{
     display: block;
