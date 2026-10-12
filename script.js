@@ -8,18 +8,16 @@ function imageExists(url){
 }
 
 function mainMenu() {
-    var ham = imageExists(the first url) ? "images/hamburger.png" : "../images/hamburger.png";
-    var hamClear = imageExists(the first url) ? "images/hamburger_clear.png" : "../images/hamburger_clear.png";
     var hamImg = document.getElementById("hamburger");
     var nav = document.getElementsByTagName("nav");
     for(var i = 0; i < nav.length; i++){
         nav[i].classList.toggle("navMenu");
     }
     if(hamImg.style.backgroundColor == "rgb(106, 159, 219)"){
-        hamImg.src = ham;
+        hamImg.src = "images/hamburger.png";
         hamImg.style.backgroundColor = "rgba(106, 159, 219, 0)";
     }else{
-        hamImg.src = hamClear;
+        hamImg.src = "images/hamburger_clear.png";
         hamImg.style.backgroundColor = "rgb(106, 159, 219)";
     }
 }
