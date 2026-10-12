@@ -1,14 +1,25 @@
+function imageExists(url){
+    var http = new XMLHttpRequest();
+
+    http.open('HEAD', image_url, false);
+    http.send();
+
+    return http.status != 404;
+}
+
 function mainMenu() {
+    var ham = imageExists(the first url) ? "images/hamburger.png" : "../images/hamburger.png";
+    var hamClear = imageExists(the first url) ? "images/hamburger_clear.png" : "../images/hamburger_clear.png";
     var hamImg = document.getElementById("hamburger");
     var nav = document.getElementsByTagName("nav");
     for(var i = 0; i < nav.length; i++){
         nav[i].classList.toggle("navMenu");
     }
     if(hamImg.style.backgroundColor == "rgb(106, 159, 219)"){
-        hamImg.src = "images/hamburger.png";
+        hamImg.src = ham;
         hamImg.style.backgroundColor = "rgba(106, 159, 219, 0)";
     }else{
-        hamImg.src = "images/hamburger_clear.png";
+        hamImg.src = hamClear;
         hamImg.style.backgroundColor = "rgb(106, 159, 219)";
     }
 }
