@@ -10,14 +10,31 @@ function imageExists(url){
 function mainMenu() {
     var hamImg = document.getElementById("hamburger");
     var nav = document.getElementsByTagName("nav");
+
+    const ham = new Image();
+    const hamClear = new Image();
+    ham.onerror = function() {
+        if (this.src !== "..images/hamburger.png") {
+            this.src = "..images/hamburger.png";
+        }
+    };
+    hamClear.onerror = function() {
+        if (this.src !== "..images/hamburger_clear.png") {
+            this.src = "..images/hamburger_clear.png";
+        }
+    };
+
+    ham.src = "images/hamburger.png";
+    hamClear.src = "images/hamburger_clear.png";
+    
     for(var i = 0; i < nav.length; i++){
         nav[i].classList.toggle("navMenu");
     }
     if(hamImg.style.backgroundColor == "rgb(106, 159, 219)"){
-        hamImg.src = "images/hamburger.png";
+        hamImg.src = ham;
         hamImg.style.backgroundColor = "rgba(106, 159, 219, 0)";
     }else{
-        hamImg.src = "images/hamburger_clear.png";
+        hamImg.src = hamClear;
         hamImg.style.backgroundColor = "rgb(106, 159, 219)";
     }
 }
