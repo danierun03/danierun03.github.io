@@ -14,12 +14,12 @@ function mainMenu() {
     const ham = new Image();
     const hamClear = new Image();
     ham.onerror = function() {
-        if (this.src !== "..images/hamburger.png") {
+        if (this.src !== "images/hamburger.png") {
             this.src = "../images/hamburger.png";
         }
     };
     hamClear.onerror = function() {
-        if (this.src !== "..images/hamburger_clear.png") {
+        if (this.src !== "images/hamburger_clear.png") {
             this.src = "../images/hamburger_clear.png";
         }
     };
