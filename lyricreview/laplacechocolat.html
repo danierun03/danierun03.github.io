@@ -12,6 +12,19 @@
 <body>
     <div id="top">
         <header>
+            <script>
+    var nav = document.getElementsByTagName("nav");
+    for(var i = 0; i < nav.length; i++){
+        nav[i].classList.toggle("navMenu");
+    }
+    if(hamImg.style.backgroundColor == "rgb(106, 159, 219)"){
+        hamImg.src = "images/hamburger.png";
+        hamImg.style.backgroundColor = "rgba(106, 159, 219, 0)";
+    }else{
+        hamImg.src = "images/hamburger_clear.png";
+        hamImg.style.backgroundColor = "rgb(106, 159, 219)";
+    }
+            </script>
             <img id="hamburger" src="../images/hamburger.png" onclick="mainMenu()">
             <img id="logo" src="../images/danierun_logo.png" alt="Danierun website logo">
         </header>
