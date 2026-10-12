@@ -1,12 +1,3 @@
-function imageExists(url){
-    var http = new XMLHttpRequest();
-
-    http.open('HEAD', image_url, false);
-    http.send();
-
-    return http.status != 404;
-}
-
 function mainMenu() {
     var hamImg = document.getElementById("hamburger");
     var nav = document.getElementsByTagName("nav");
