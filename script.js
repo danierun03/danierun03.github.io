@@ -14,12 +14,12 @@ function mainMenu() {
     const ham = new Image();
     const hamClear = new Image();
     ham.onerror = function() {
-        if (this.src !== "images/hamburger.png") {
+        if (this.src !== "..images/hamburger.png") {
             this.src = "../images/hamburger.png";
         }
     };
     hamClear.onerror = function() {
-        if (this.src !== "images/hamburger_clear.png") {
+        if (this.src !== "..images/hamburger_clear.png") {
             this.src = "../images/hamburger_clear.png";
         }
     };
@@ -31,10 +31,10 @@ function mainMenu() {
         nav[i].classList.toggle("navMenu");
     }
     if(hamImg.style.backgroundColor == "rgb(106, 159, 219)"){
-        hamImg.src = ham.outerHTML;
+        hamImg.src = ham;
         hamImg.style.backgroundColor = "rgba(106, 159, 219, 0)";
     }else{
-        hamImg.src = hamClear.outerHTML;
+        hamImg.src = hamClear;
         hamImg.style.backgroundColor = "rgb(106, 159, 219)";
     }
 }
