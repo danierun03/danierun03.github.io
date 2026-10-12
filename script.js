@@ -31,10 +31,10 @@ function mainMenu() {
         nav[i].classList.toggle("navMenu");
     }
     if(hamImg.style.backgroundColor == "rgb(106, 159, 219)"){
-        hamImg.src = ham;
+        hamImg.src = ham.outerHTML;
         hamImg.style.backgroundColor = "rgba(106, 159, 219, 0)";
     }else{
-        hamImg.src = hamClear;
+        hamImg.src = hamClear.outerHTML;
         hamImg.style.backgroundColor = "rgb(106, 159, 219)";
     }
 }
