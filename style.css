@@ -7,6 +7,9 @@ body{
     justify-content: stretch;
     line-height: 25px;
 }
+span{
+    scroll-margin-top: 100px;
+}
 .highlight{
     color: #2d68ac;
     font-weight: 600;
