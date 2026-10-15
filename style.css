@@ -1,6 +1,6 @@
 html{
     scroll-behavior: smooth;
-    scroll-margin-top: 300px;
+    scroll-padding-top: 100px;
 }
 body{
     font-family: Verdana, Tahoma, sans-serif;
